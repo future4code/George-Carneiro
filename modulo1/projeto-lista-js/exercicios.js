@@ -39,11 +39,10 @@ function imprimeIdade(anoAtual, anoNascimento) {
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
-  const imc = peso / (altura * altura)
-  const pesoUsuario = prompt('Qual o seu peso? ')
-  const alturaUsuario = prompt('Qual sua altura? ')
-  console.log(imc)
+  const imc = peso / (altura ** 2)
+  return imc
 }
+  calculaIMC( )
 
 // EXERCÍCIO 04
 function imprimeInformacoesUsuario() {
@@ -58,50 +57,64 @@ function imprimeInformacoesUsuario() {
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
-
+  const corFavorita1 = prompt('Quais suas três cores favoritas? Primeira cor: ')
+  const corFavorita2 = prompt('Seguda cor: ')
+  const corFavorita3 = prompt('Terceira cor: ')
+  const Arraycores = [corFavorita1, corFavorita2, corFavorita3]
+  console.log(Arraycores)
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
+return string.toUpperCase("Olá, meu nome é George convertendo minúscula para maiúscula.")
 
 }
+  console.log(string())
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-
+return custo / valorIngresso
 }
+console.log(calculaIngressosEspetaculo)
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
-  // implemente sua lógica aqui
-
+  // implemente sua lógica aqui   
+return string1.length == string2.length 
 }
+console.log(checaStringsMesmoTamanho())
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-
+  return array[0]
 }
+  console.log(retornaPrimeiroElemento)
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-
+  return array[array.length - 1]
 }
+  console.log(retornaUltimoElemento)
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
+  return array.push(array.splice(0,1)[0]), array.unshift(array.splice(array.length - 1,1)[1])
 
 }
+  console.log(trocaPrimeiroEUltimo() )
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-
+  return string1.toUpperCase() == string2.toUpperCase(), string1.toLowerCase() == string2.toLowerCase()
+  
 }
+  console.log(checaIgualdadeDesconsiderandoCase())
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
