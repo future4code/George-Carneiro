@@ -19,13 +19,19 @@ function retornaArrayInvertido(array) {
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-  
+    const arrayOrdenado = [array]
+    arrayOrdenado.sort(function(a, b) {
+    return a - b
+    })
 }
-
+    console.log(retornaArrayOrdenado([5,10,2,1,40,20,]))
+    
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+    const pares = array.filter(x => x % 2 === 0)
+    return pares
 }
+    
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
