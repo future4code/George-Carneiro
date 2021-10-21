@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Venda</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>  
+  <h1> LANÇAMENTO DE COMPRAS </h1> 
+  </header>
+
+  <h3> Formulário de Lançamentos </h3>
+    <form action="#">
+      <label for="name">Nome do Comprardor</label>
+      <input id="name" type="text" name="Nome">
+
+      <label for="cpf">CPF do Comprador</label>
+      <input id="cpf" type="text" name="Numero CPF">
+
+      <label for="name">Nome do Produto</label>
+     
+      <select> id="selecionarProduto" name="listaProdutos" >
+          <option value= "">Selecione o Produto </option>
+          <option value="79.90">Bola</option>
+          <option value="249.99">Chuteira</option>
+          <option value="39.90">Meião</option>
+          <option value="10">Camisa</option>
+      </select>
+
+      <label for="preço">Valor do Produto</label>
+      <input id="preço" type="text" name="Valor Produto">
+      
+      <label for="pagamento">Meio de Pagamento</label>
+        <select> id="selecionarProduto" name="listaProdutos" >
+            <option value= "">Selecione o Meio de Pagamento </option>
+            <option value="">Cartão</option>
+            <option value="">Dinheiro</option>
+         </select>
+
+      <button type="submit">Lançar Compra</button>
+    </form>
+
+  <footer> 
+  Lojão do Esporte © Todos os Direitos Reservados
+  </footer>
+
+</body>
+</html>
