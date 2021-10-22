@@ -63,18 +63,20 @@ div img {
 
 
 /** 
-  *
   *  ESTILOS HOME 
   *
   **/
-
-#container-de-descricao {
+#container-de-descricao {   
     background-color: #2274a5;
     color: white;
+    display: block;
+    
 }
 
 #container-de-descricao>p {
     padding: 15px 0px;
+    white-space: pre-line;
+    border: 1px dotted black;
 }
 
 #container-para-comprar {
@@ -101,6 +103,7 @@ div:last-child {
 
 table {
     width: 60%;
+    text-align:center;
 }
 
 td button {
